@@ -21,13 +21,15 @@ public class KillMessageCommand implements CommandExecutor {
             sender.sendMessage(plugin.configManager.langConfig.getString("error.onlyplayer"));
             return true;
         }
-
+        if (!sender.hasPermission("kcm.command")) {
+            sender.sendMessage(plugin.configManager.langConfig.getString("error.noperm"));
+            return true;
+        }
         // Verifica se il comando ha il giusto numero di argomenti e il corretto uso
         if (args.length <= 1 || !args[0].equalsIgnoreCase("set")) {
             sender.sendMessage(plugin.configManager.langConfig.getString("error.usage"));
             return true;
         }
-
         // Ottieni il giocatore che ha eseguito il comando
         Player player = (Player) sender;
 
