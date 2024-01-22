@@ -18,13 +18,13 @@ public class KillMessageCommand implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         // Verifica se il comando è stato eseguito da un giocatore
         if (!(sender instanceof Player)) {
-            sender.sendMessage("Questo comando può essere eseguito solo da un giocatore.");
+            sender.sendMessage(plugin.configManager.langConfig.getString("error.onlyplayer"));
             return true;
         }
 
         // Verifica se il comando ha il giusto numero di argomenti e il corretto uso
         if (args.length <= 1 || !args[0].equalsIgnoreCase("set")) {
-            sender.sendMessage("Utilizzo corretto: /kcm set <stringa>");
+            sender.sendMessage(plugin.configManager.langConfig.getString("error.usage"));
             return true;
         }
 
@@ -33,9 +33,15 @@ public class KillMessageCommand implements CommandExecutor {
 
         // Ottieni la stringa dall'argomento del comando
         String nuovaStringa = String.join(" ", args).replaceFirst("set ", "");
+        plugin.getLogger().info(plugin.configManager.langConfig.toString());
+        if (nuovaStringa.length() > 60) {
+            sender.sendMessage(plugin.configManager.langConfig.getString("error.toolong"));
+            return true;
+        }
         // Se la stringa non contiene %victim% e %killer%, non è valida
         if (!nuovaStringa.contains("%victim%") || !nuovaStringa.contains("%killer%")) {
-            sender.sendMessage("La stringa personalizzata deve contenere i segnaposto %victim% e %killer%.");
+            sender.sendMessage(plugin.configManager.langConfig.getString("error.invalid"));
+            sender.sendMessage("");
             return true;
         }
 
@@ -49,7 +55,7 @@ public class KillMessageCommand implements CommandExecutor {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        sender.sendMessage("Messaggio personalizzato di uccisione salvato.");
+        sender.sendMessage(plugin.configManager.langConfig.getString("success.set"));
         return true;
     }
 

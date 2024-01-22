@@ -1,0 +1,8 @@
+plugin.enabled : "Il plugin è abilitato"
+plugin.disabled : "Il plugin è disabilitato"
+error.onlyplayer : "§cQuesto comando può essere eseguito solo da un giocatore"
+error.usage: "§cUtilizzo corretto: /kcm set <stringa>"
+success.set : "§aIl messaggio è stato impostato correttamente"
+error.noperm : "§cNon hai il permesso di eseguire questo comando"
+error.toolong : "§cLa stringa personalizzata non può essere più lunga di 60 caratteri"
+error.invalid : "§cLa stringa personalizzata deve contenere i segnaposto %victim% e %killer%"
