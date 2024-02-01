@@ -20,7 +20,7 @@ The Custom Messages Plugin for Minecraft allows server administrators to tailor 
 ## Usage:
 
 1. **Set Custom Message:**
-   - `/kcm set <message>` - Set a custom message for specific actions.
+   - `/kcm set <message>` - Set a custom message for specific actions. (message must contains %killer%, %victim% and %weapon%)
 
 ## Permissions:
 - `kcm.command` - Required to use the Custom Messages Plugin commands.
