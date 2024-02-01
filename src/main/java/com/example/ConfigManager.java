@@ -30,6 +30,7 @@ public class ConfigManager {
         this.langConfig = YamlConfiguration.loadConfiguration(new File(plugin.getDataFolder(), config.get("lang") + ".yml"));
     }
     public void savePlayerCustomMessage(Player player, String message) throws IOException {
+        config.set("lang",config.get("lang"));
         // Salva il messaggio custom del giocatore nel file di configurazione
         config.set("messages."+player.getUniqueId(), message);
         config.save(plugin.getDataFolder()+"/config.yml");
