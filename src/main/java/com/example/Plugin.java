@@ -4,16 +4,8 @@ import java.io.IOException;
 import java.util.logging.Logger;
 
 import com.example.commands.KillMessageCommand;
-import com.example.lang.LangManager;
-import com.example.listeners.JoinListener;
 import com.example.listeners.KillListener;
 import org.bukkit.plugin.java.JavaPlugin;
-
-import com.example.listeners.BreakListener;
-import com.example.listeners.MoveListener;
-
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandSender;
 
 /*
  * demo java plugin
@@ -40,10 +32,7 @@ public class Plugin extends JavaPlugin {
 
     public void registerEvents() throws IOException {
         // Listeners
-        this.getServer().getPluginManager().registerEvents(new MoveListener(), this);
-        this.getServer().getPluginManager().registerEvents(new BreakListener(), this);
         this.getServer().getPluginManager().registerEvents(new KillListener(this), this);
-        this.getServer().getPluginManager().registerEvents(new JoinListener(), this);
 
         // Commands
         KillMessageCommand kmc = new KillMessageCommand(this);

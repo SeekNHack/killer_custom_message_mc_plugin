@@ -41,7 +41,7 @@ public class KillMessageCommand implements CommandExecutor {
             return true;
         }
         // Se la stringa non contiene %victim% e %killer%, non è valida
-        if (!nuovaStringa.contains("%victim%") || !nuovaStringa.contains("%killer%")) {
+        if (!nuovaStringa.contains("%victim%") || !nuovaStringa.contains("%killer%") || !nuovaStringa.contains("%weapon%")) {
             sender.sendMessage(plugin.configManager.langConfig.getString("error.invalid"));
             sender.sendMessage("");
             return true;
