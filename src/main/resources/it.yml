@@ -6,6 +6,12 @@ success.set : "§aIl messaggio è stato impostato correttamente"
 error.noperm : "§cNon hai il permesso di eseguire questo comando"
 error.toolong : "§cLa stringa personalizzata non può essere più lunga di 60 caratteri"
 error.invalid : "§cLa stringa personalizzata deve contenere i segnaposto %victim%, %killer% w %weapon%"
+success.reload: "§aIl plugin è stato ricaricato correttamente"
+help:
+  help: "Mostra l'elenco dei comandi"
+  set: "Imposta un messaggio personalizzato quando uccidi un giocatore"
+  reload: "Ricarica la configurazione"
+  title: "[KMC] Lista dei comandi"
 weapons:
   diamond_sword: "spada di diamante"
   diamond_axe: "ascia di diamante"

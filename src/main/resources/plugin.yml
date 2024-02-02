@@ -1,15 +1,21 @@
 name: killercustommessage
-main: com.example.Plugin
-version: 1.0
+main: it.hns.Plugin
+version: 1.1
 api-version: 1.15
 commands:
   kcm:
     description: Set a custom message when kill a player
-    usage: /kcm set <custom-message>
+    usage: /kcm <command>
     aliases: [killcustommessage]
     subcommands:
       set:
         description: Set a custom message when kill a player
         usage: /kcm set <custom-message>
         permission: kcm.command.set
-        executor: com.example.commands.KillCustomMessageCommand
+      reload:
+        description: Reload the configuration
+        usage: /kcm reload
+        permission: kcm.command.reload
+      help:
+        description: Show the list of commands
+        usage: /kcm help

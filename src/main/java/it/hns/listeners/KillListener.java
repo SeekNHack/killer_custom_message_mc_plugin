@@ -1,16 +1,11 @@
-package com.example.listeners;
+package it.hns.listeners;
 
 import org.bukkit.ChatColor;
-import org.bukkit.Material;
-import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.entity.EntityDeathEvent;
-import com.example.ConfigManager;
-import com.example.Plugin;
+import it.hns.Plugin;
 import org.bukkit.event.entity.PlayerDeathEvent;
-import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import java.io.IOException;

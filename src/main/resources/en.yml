@@ -6,6 +6,12 @@ success.set: "§aThe message has been set successfully"
 error.noperm: "§cYou do not have permission to execute this command"
 error.toolong: "§cThe custom string cannot be longer than 25 characters"
 error.invalid: "§cThe custom string must contain the placeholders %victim% and %killer%"
+success.reload: "§aThe plugin has been reloaded successfully"
+help:
+  help: "Show the list of commands"
+  set: "Set a custom message when you kill a player"
+  reload: "Reload the configuration"
+  title: "[KMC] List of commands"
 weapons:
   diamond_sword: "diamond sword"
   diamond_axe: "diamond axe"

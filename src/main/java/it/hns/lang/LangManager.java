@@ -1,6 +1,6 @@
-package com.example.lang;
+package it.hns.lang;
 
-import com.example.Plugin;
+import it.hns.Plugin;
 
 public class LangManager {
     Plugin plugin;
