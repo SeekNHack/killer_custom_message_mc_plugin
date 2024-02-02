@@ -13,7 +13,8 @@ The Custom Messages Plugin for Minecraft allows server administrators to tailor 
 
 2. **Multilanguage support:**
    - Translate your own `[lang].yml` file and put it in `config.yml` file
-
+3. **Color support**:
+   - Use your favorite `&` color to make special you killing message!
 ## Usage:
 1. **Command list:**
    - `/kmc` - Shows list of commands
