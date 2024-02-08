@@ -1,10 +1,10 @@
-# Custom Messages Plugin
+# Killer Custom Messages Plugin
 
 ---
 
 ## Description:
 
-The Custom Messages Plugin for Minecraft allows server administrators to tailor and personalize in-game messages for a more unique and engaging player experience. Whether you want to communicate custom error messages, success confirmations, or provide specific instructions, this plugin gives you the flexibility to shape your server's communication style.
+Killer Custom Messages Plugin for Minecraft allows to edit your personal killing message.
 
 ## Features:
 
@@ -13,7 +13,8 @@ The Custom Messages Plugin for Minecraft allows server administrators to tailor 
 
 2. **Multilanguage support:**
    - Translate your own `[lang].yml` file and put it in `config.yml` file
-
+3. **Color support**:
+   - Use your favorite `&` color to make special you killing message!
 ## Usage:
 1. **Command list:**
    - `/kmc` - Shows list of commands
