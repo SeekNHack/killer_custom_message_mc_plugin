@@ -27,6 +27,7 @@ public class Plugin extends JavaPlugin {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+        Metrics metrics = new Metrics(this, 20945);
         LOGGER.info(configManager.langConfig.getString("plugin.enabled"));
     }
 
